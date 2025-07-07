@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Abaixo o link da folha de estilo externa -->
+    <link rel="stylesheet" href="CSS\estilo1.css">
+    <title>Formulários</title>
+</head>
+<body>
+
+    <!-- Aplicando abaixo as informações do formulário e no final um link para enviar para cadastrar (sem ação) -->
+
+    <h1>Formulário para Solicitação de Curso</h1>
+    <form action="" method="POST">
+        <br><br>
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" placeholder="Digite seu nome de usuário" size="50" maxlength="50">
+        <br><br>
+        <label for="senha">Senha:</label>
+        <input type="text" type="password" name="senha" size="50" maxlength="50">                        
+        <br><br><br>
+        <fieldset>
+           <label for="linguagem">Linguagem de preferência:</label>
+            <br><br>
+            <input type="checkbox" name="linguagem[]" value="c++"> C++    
+            <input type="checkbox" name="linguagem[]" value="php"> PHP
+            <input type="checkbox" name="linguagem[]" value="pyhton"> Python
+        </fieldset>
+        <br><br><br>
+        <label for="linguagemescolhida">Linguagem que irá cursar agora:</label>
+        <br><br>
+        <input type="radio" name="curso" value="c++"> C++    
+        <input type="radio" name="curso" value="php"> PHP
+        <input type="radio" name="curso" value="pyhton"> Python
+        <br><br><br>
+        <select name="escola" id="">
+            <option value="c++">C++</option>
+            <option value="php">PHP</option>
+            <option value="python">Python</option>
+        </select>
+        <br><br>
+        <input name="submit" type="submit" id="submit" value="Enviar">
+    </form>
+
+
+</body>
+</html>
